@@ -33,6 +33,9 @@
   box-sizing: border-box;
 }
 
+body {
+}
+
 /* a */
 a {
   /* text */
@@ -99,9 +102,21 @@ header {
   color: var(--color-dark-blue);
 }
 
+/* Header Responsive */
+@media screen and (max-width: 500px) {
+  header {
+    /* display */
+    display: none;
+  }
+}
+
 /* Nav
 ------------------------------------------ */
 nav {
+  /* overflow */
+  overflow-x: clip;
+  /* width */
+  width: 100%;
   /* position */
   position: sticky;
   top: 0;
@@ -112,6 +127,8 @@ nav {
   /* box-shadow */
   -webkit-box-shadow: 0px 6px 5px -6px #000000;
   box-shadow: 0px 6px 5px -6px #000000;
+  /* z-index */
+  z-index: 1000;
 }
 
 /* logo */
@@ -164,7 +181,7 @@ nav ul li a {
   /* text */
   line-height: 70px;
   /* font */
-  font-size: 1.1rem;
+  font-size: 0.9rem;
   /* padding */
   padding: 8px 15px;
   /* transition */
@@ -205,11 +222,110 @@ nav ul ul li {
   /* margin */
   margin: 0;
   /* width */
-  width: 150px;
+  width: 140px;
   /* float */
   float: none;
   /* display */
   display: list-item;
   /* border */
   border-bottom: 1px solid rgba(0, 0, 0, 0.089);
+}
+
+nav ul ul li a {
+  /* text */
+  line-height: 50px;
+}
+
+/* show */
+.show,
+.icon,
+input {
+  display: none;
+}
+
+/* Responsive Nav*/
+@media all and (max-width: 968px) {
+  /* nav */
+  nav ul {
+    /* margin */
+    margin-right: 0px;
+    /* float */
+    float: left;
+  }
+  nav .logo {
+    /* padding */
+    padding-left: 30px;
+    /* width */
+    width: 100%;
+  }
+
+  nav ul li,
+  nav ul ul li {
+    /* display */
+    display: block;
+    /* width */
+    width: 100%;
+  }
+
+  nav ul ul {
+    /* position */
+    top: 70px;
+    position: static;
+    /* float */
+    float: none;
+    /* display */
+    display: none;
+    opacity: 1;
+    visibility: visible;
+    /* background */
+    background-color: var(--color-white);
+  }
+  nav ul ul li {
+    /* border */
+    border: none;
+  }
+  nav ul ul a {
+    /* padding */
+    padding-left: 70px;
+  }
+  /* show */
+  .show {
+    /* display */
+    display: block;
+    /* font */
+    font-size: 0.9rem;
+    /* padding */
+    padding: 0 30px;
+    /* text */
+    line-height: 70px;
+    /* cursor */
+    cursor: pointer;
+    /* font */
+    font-weight: var(--font-bold);
+  }
+  .show:hover {
+    /* font */
+    color: var(--color-dark-blue);
+  }
+  .icon {
+    /* display */
+    display: block;
+    /* position */
+    position: absolute;
+    right: 45px;
+    /* text */
+    line-height: 70px;
+    /* font */
+    font-size: 2rem;
+    /* cursor */
+    cursor: pointer;
+  }
+  .show + a,
+  ul {
+    /* display */
+    display: none;
+  }
+  [id^='btn']:checked + ul {
+    display: block;
+  }
 }

@@ -17,7 +17,7 @@
   --color-white: #fff;
   --color-black: #000;
   --color-grey: rgb(95, 95, 95);
-  --color-light-grey: rgb(175, 175, 175);
+  --color-light-grey: rgb(230, 230, 230);
   --color-dark-grey: rgb(51, 51, 51);
   --color-red: rgb(255, 89, 89);
   --color-green: rgb(24, 143, 24);
@@ -101,3 +101,115 @@ header {
 
 /* Nav
 ------------------------------------------ */
+nav {
+  /* position */
+  position: sticky;
+  top: 0;
+  /* font */
+  font-family: var(--font-kr);
+  /* background */
+  background-color: var(--color-white);
+  /* box-shadow */
+  -webkit-box-shadow: 0px 6px 5px -6px #000000;
+  box-shadow: 0px 6px 5px -6px #000000;
+}
+
+/* logo */
+nav .logo {
+  /* float */
+  float: left;
+  /* font */
+  font-family: var(--font-kr);
+  font-size: 2rem;
+  font-weight: var(--font-bold);
+  color: var(--color-dark-blue);
+  /* text */
+  line-height: 70px;
+  /* padding */
+  padding-left: 60px;
+}
+
+/* nav after */
+nav::after {
+  /* content */
+  content: '';
+  clear: both;
+  /* display */
+  display: table;
+}
+
+/* nav ul */
+nav ul {
+  /* float */
+  float: right;
+  /* margin */
+  margin-right: 40px;
+  /* position */
+  position: relative;
+}
+
+nav ul li {
+  /* float */
+  float: left;
+  /* display */
+  display: inline-block;
+  /* margin */
+  margin: 0 5px;
+}
+
+nav ul li a {
+  /* font */
+  font-weight: var(--font-bold);
+  color: var(--color-black);
+  /* text */
+  line-height: 70px;
+  /* font */
+  font-size: 1.1rem;
+  /* padding */
+  padding: 8px 15px;
+  /* transition */
+  transition: all 300ms ease-in-out;
+}
+
+nav ul li a:hover {
+  /* font */
+  color: var(--color-dark-blue);
+}
+
+nav ul ul {
+  /* opacity */
+  opacity: 0;
+  /* visible */
+  visibility: hidden;
+  /* position */
+  position: absolute;
+  top: 50px;
+  /* background */
+  background-color: var(--color-light-grey);
+  /* transition */
+  transition: all 350ms ease-in-out;
+}
+
+nav ul li:hover > ul {
+  /* top */
+  top: 70px;
+  /* opacity */
+  opacity: 1;
+  /* visible */
+  visibility: visible;
+}
+
+nav ul ul li {
+  /* position */
+  position: relative;
+  /* margin */
+  margin: 0;
+  /* width */
+  width: 150px;
+  /* float */
+  float: none;
+  /* display */
+  display: list-item;
+  /* border */
+  border-bottom: 1px solid rgba(0, 0, 0, 0.089);
+}

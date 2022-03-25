@@ -7,6 +7,10 @@
     <!-- CSS LINK -->
     <link rel="stylesheet" href="./css/default/default.css" />
     <link rel="stylesheet" href="./css/main/main-style.css" />
+    <!-- slick -->
+    <link rel="stylesheet" type="text/css" href="slick/slick/slick.css" />
+    <link rel="stylesheet" type="text/css" href="slick/slick/slick-theme.css" />
+    <!-- FontAwesome -->
     <script
       src="https://kit.fontawesome.com/91eb112b1c.js"
       crossorigin="anonymous"
@@ -15,7 +19,7 @@
   </head>
   <body>
     <!-- Header -->
-    <header>
+    <header id="total__header">
       <div class="header__link__box">
         <a href="#">관련페이지1</a>
         <a href="#">관련페이지2</a>
@@ -92,8 +96,107 @@
     </nav>
     <!-- Main -->
     <main>
-      <section id="slider"></section>
+      <!-- Home -->
+      <section id="home">
+        <header class="home__header">
+          <h1>청소년의 웃음꽃이 피는 미야</h1>
+        </header>
+        <!-- Home slider background -->
+        <section id="slider__box">
+          <div></div>
+          <div></div>
+          <div></div>
+        </section>
+        <!-- Home main contents -->
+        <section class="home__contents">
+          <div class="notification__box">
+            <h2>공지사항</h2>
+            <div class="notify__top">
+              <h3>2022년 00월 청소년 프로그램 관련 안내 및 신청서 폼</h3>
+              <p class="notify__top__contents">
+                00월 청소년을 위한 컴퓨터 교육프로그램 접수는 0월 00이(목) 0시
+                시작합니다. 또한 컴퓨터 관련 자격증교육 신청시에는 별도 신청서에
+                부탁드립니다.
+              </p>
+            </div>
+            <div class="notify__bottom">
+              <p class="notify__bottom__contents">
+                <a href="">
+                  원데이클래스(0월) : 청소년 알고리즘 강좌 신청관련 안내 및
+                  신청기간 안내, 신청폼은 하단에
+                </a>
+              </p>
+              <p class="notify__bottom__contents">
+                <a href="">
+                  원데이클래스(0월) : 청소년 알고리즘 강좌 신청관련 안내 및
+                  신청기간 안내, 신청폼은 하단에
+                </a>
+              </p>
+              <p class="notify__bottom__contents">
+                <a href="">
+                  원데이클래스(0월) : 청소년 알고리즘 강좌 신청관련 안내 및
+                  신청기간 안내, 신청폼은 하단에
+                </a>
+              </p>
+              <p class="notify__bottom__contents">
+                <a href="">
+                  원데이클래스(0월) : 청소년 알고리즘 강좌 신청관련 안내 및
+                  신청기간 안내, 신청폼은 하단에
+                </a>
+              </p>
+              <p class="notify__bottom__contents">
+                <a href="">
+                  원데이클래스(0월) : 청소년 알고리즘 강좌 신청관련 안내 및
+                  신청기간 안내, 신청폼은 하단에
+                </a>
+              </p>
+            </div>
+          </div>
+          <!-- Home activity info -->
+          <div class="activity">
+            <section class="project sns">
+              <h2>SNS 소식보기</h2>
+              <p class="sns__contents">
+                미야청소년센터<br /><span>소식 더 보기</span>
+              </p>
+              <a href="#"
+                ><i class="fab fa-facebook sns__icon"></i> 페이스북 가기
+                <i class="fas fa-angle-right"></i
+              ></a>
+              <br />
+              <a href="#"
+                ><i class="fab fa-instagram sns__icon"></i> 인스타그램 가기
+                <i class="fas fa-angle-right"></i
+              ></a>
+            </section>
+            <section class="project click">
+              <h2>청소년사업</h2>
+              <i class="fas fa-user-friends"></i>
+              <p class="project__contents">
+                중고등학교 학생들을 위한 전문강좌, 프로그램 등을 지원합니다.
+              </p>
+            </section>
+            <section class="project click">
+              <h2>방과후교육</h2>
+              <i class="fas fa-school"></i>
+              <p class="project__contents">
+                중고등학교 학생들을 위한 전문강좌, 프로그램 등을 지원합니다.
+              </p>
+            </section>
+            <section class="project click">
+              <h2>청소년 상담</h2>
+              <i class="fas fa-comment-dots"></i>
+              <p class="project__contents">
+                중고등학교 학생들을 위한 심리상담, 진로상담 등을 지원합니다.
+              </p>
+            </section>
+          </div>
+        </section>
+      </section>
+      <!-- Doing Activity -->
+      <section id="doing"></section>
     </main>
+    <button class="scrollUp"><i class="fas fa-arrow-up"></i></button>
     <!-- footer -->
     <footer>
       <div id="footer__contents__box">
@@ -104,16 +207,29 @@
         <section>
           <p>
             경기도 성남시 분당구 판교로 700&nbsp;&nbsp;사업자등록번호.
-            129-10-85411&nbsp;&nbsp;대표자명.
+            000-00-00000&nbsp;&nbsp;대표자명.
             홍길동&nbsp;&nbsp;개인정보책임담당. 박OO
           </p>
           <p>
             TEL. 02-0000-0000~1&nbsp;&nbsp;&nbsp;FAX.
-            02-0000-0000&nbsp;&nbsp;&nbspE-mail. MIYA@example.com
+            02-0000-0000&nbsp;&nbsp;&nbspE-MAIL. MIYA@example.com
           </p>
           <span>COPYRIGHT &copy; 2022 BY MIYA.ALL RIGHT RESERVED</span>
         </section>
       </div>
     </footer>
+    <!-- JQUERY -->
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="//code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <!-- Slick JS -->
+    <script type="text/javascript" src="slick/slick/slick.min.js"></script>
+    <!-- JS -->
+    <script src="./js/main/main_slider.js"></script>
   </body>
 </html>

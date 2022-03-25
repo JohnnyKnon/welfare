@@ -15,9 +15,10 @@
   --color-dark-blue: #003688;
   --color-light-blue: #61a0ff;
   --color-white: #fff;
+  --color-opacity-white: rgba(255, 255, 255, 0.76);
   --color-black: #000;
   --color-grey: rgb(95, 95, 95);
-  --color-light-grey: rgb(230, 230, 230);
+  --color-light-grey: rgb(221, 221, 221);
   --color-dark-grey: rgb(51, 51, 51);
   --color-red: rgb(255, 89, 89);
   --color-green: rgb(24, 143, 24);
@@ -31,9 +32,6 @@
   padding: 0;
   /* box-sizing */
   box-sizing: border-box;
-}
-
-body {
 }
 
 /* a */
@@ -57,7 +55,7 @@ button {
 }
 
 /* Header */
-header {
+#total__header {
   /* size */
   width: 100vw;
   height: 100%;
@@ -104,7 +102,7 @@ header {
 
 /* Header Responsive */
 @media screen and (max-width: 500px) {
-  header {
+  #total__header {
     /* display */
     display: none;
   }
@@ -340,7 +338,7 @@ footer {
   /* background */
   background-color: var(--color-light-grey);
   /* padding */
-  padding: 20px 0;
+  padding: 35px 0;
   /* flex */
   display: flex;
   justify-content: center;
@@ -424,4 +422,35 @@ footer {
     /* text */
     text-align: center;
   }
+}
+
+/* Scroll Up */
+.scrollUp {
+  /* font */
+  font-size: 1.3rem;
+  color: var(--color-white);
+  /* position */
+  position: fixed;
+  right: 30px;
+  bottom: 50px;
+  /* size */
+  width: 50px;
+  height: 50px;
+  /* background */
+  background-color: var(--color-dark-blue);
+  /* border */
+  border-radius: 50%;
+  /* opacity */
+  opacity: 0;
+  /* visible */
+  visibility: hidden;
+  /* z-index */
+  z-index: 1000;
+}
+
+.scrollUp-active {
+  /* opacity */
+  opacity: 1;
+  /* visible */
+  visibility: visible;
 }

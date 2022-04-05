@@ -17,4 +17,34 @@ $(document).ready(function () {
       },
     ],
   });
+  // Poster Slider
+  $('.info__slider').slick({
+    autoplay: true,
+    infinite: true,
+    centerMode: true,
+    centerPadding: '0px',
+    slidesToShow: 3,
+    prevArrow: $('.prevArrow'),
+    nextArrow: $('.nextArrow'),
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          arrows: false,
+          centerMode: true,
+          centerPadding: '0px',
+          slidesToShow: 3,
+        },
+      },
+      {
+        breakpoint: 625,
+        settings: {
+          arrows: false,
+          centerMode: true,
+          centerPadding: '0px',
+          slidesToShow: 1,
+        },
+      },
+    ],
+  });
 });

@@ -15,6 +15,8 @@
       src="https://kit.fontawesome.com/91eb112b1c.js"
       crossorigin="anonymous"
     ></script>
+    <!-- AOS -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>미야청소년센터</title>
   </head>
   <body>
@@ -33,25 +35,25 @@
         <span class="fa fa-bars"></span>
       </label>
       <input type="checkbox" id="btn" />
-      <ul>
+      <ul class="nav__ul">
         <li>
           <label for="btn-1" class="show">센터안내 +</label>
           <a href="#">센터안내</a>
           <input type="checkbox" id="btn-1" />
-          <ul>
+          <ul class="nav__ul">
             <li><a href="">인사말</a></li>
             <li><a href="">연혁</a></li>
             <li><a href="">사업목적</a></li>
             <li><a href="">법인소개</a></li>
             <li><a href="">조직도</a></li>
-            <li><a href="">찾아오시는길</a></li>
+            <li><a href="">오시는 길</a></li>
           </ul>
         </li>
         <li>
           <label for="btn-2" class="show">청소년활동 +</label>
           <a href="#">청소년활동</a>
           <input type="checkbox" id="btn-2" />
-          <ul>
+          <ul class="nav__ul">
             <li><a href="">온라인접수</a></li>
             <li><a href="">청소년사업</a></li>
             <li><a href="">특성화사업</a></li>
@@ -64,7 +66,7 @@
           <label for="btn-3" class="show">평생교육강좌 +</label>
           <a href="#">평생교육강좌</a>
           <input type="checkbox" id="btn-3" />
-          <ul>
+          <ul class="nav__ul">
             <li><a href="">강좌 접수안내</a></li>
             <li><a href="">교육문화강좌</a></li>
             <li><a href="">생활체육강좌</a></li>
@@ -76,7 +78,7 @@
           <label for="btn-4" class="show">시설이용안내 +</label>
           <a href="#">시설이용안내</a>
           <input type="checkbox" id="btn-4" />
-          <ul>
+          <ul class="nav__ul">
             <li><a href="">시설안내</a></li>
             <li><a href="">청소년전용공간</a></li>
             <li><a href="">대관안내</a></li>
@@ -86,7 +88,7 @@
           <label for="btn-5" class="show">커뮤니티 +</label>
           <a href="#">커뮤니티</a>
           <input type="checkbox" id="btn-5" />
-          <ul>
+          <ul class="nav__ul">
             <li><a href="">공지사항</a></li>
             <li><a href="">포토갤러리</a></li>
             <li><a href="">Q&A</a></li>
@@ -193,9 +195,150 @@
           </div>
         </section>
       </section>
-      <!-- Doing Activity -->
-      <section id="doing">
-        <h2>센터이야기</h2>
+      <!-- sub nav -->
+      <section id="subNav">
+        <div class="subNav__button__box">
+          <button>
+            <i class="fa-solid fa-map-location-dot"></i>
+            <h2>오시는 길</h2>
+          </button>
+          <button>
+            <i class="fa-solid fa-newspaper"></i>
+            <h2>언론보도</h2>
+          </button>
+          <button>
+            <i class="fa-solid fa-question"></i>
+            <h2>질문/답변</h2>
+          </button>
+          <button>
+            <i class="fa-solid fa-users-rectangle"></i>
+            <h2>채용안내</h2>
+          </button>
+        </div>
+      </section>
+      <!-- Info -->
+      <section id="info">
+        <h1>제목을 입력하세요</h1>
+        <article class="info__slider">
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+          <div></div>
+        </article>
+        <section id="arrow">
+          <span class="prevArrow"><i class="fa-solid fa-caret-left"></i></span>
+          <span class="nextArrow"><i class="fa-solid fa-caret-right"></i></span>
+        </section>
+      </section>
+      <!-- boards -->
+      <section id="boards">
+        <div class="boards__box">
+          <article class="board">
+            <header class="board__title">
+              <h2>게시판 이름</h2>
+              <a href="#">더보기..</a>
+            </header>
+            <ul>
+              <li>
+                <a href=""
+                  >00월 청소년을 위한 컴퓨터 교육프로그램 접수는 0월 00이(목)
+                  0시 시작합니다. 또한 컴퓨터 관련 자격증교육 신청시에는 별도
+                  신청서에 부탁드립니다.</a
+                >
+              </li>
+              <li>
+                <a href=""
+                  >00월 청소년을 위한 컴퓨터 교육프로그램 접수는 0월 00이(목)
+                  0시 시작합니다. 또한 컴퓨터 관련 자격증교육 신청시에는 별도
+                  신청서에 부탁드립니다.</a
+                >
+              </li>
+              <li>
+                <a href=""
+                  >00월 청소년을 위한 컴퓨터 교육프로그램 접수는 0월 00이(목)
+                  0시 시작합니다. 또한 컴퓨터 관련 자격증교육 신청시에는 별도
+                  신청서에 부탁드립니다.</a
+                >
+              </li>
+              <li class="last">
+                <a href=""
+                  >00월 청소년을 위한 컴퓨터 교육프로그램 접수는 0월 00이(목)
+                  0시 시작합니다. 또한 컴퓨터 관련 자격증교육 신청시에는 별도
+                  신청서에 부탁드립니다.</a
+                >
+              </li>
+            </ul>
+          </article>
+          <article class="album">
+            <header class="board__title">
+              <h2>앨범 이름</h2>
+              <a href="#">더보기..</a>
+            </header>
+            <div class="album__items">
+              <div></div>
+              <div></div>
+            </div>
+          </article>
+        </div>
+      </section>
+      <!-- Youtube -->
+      <section id="youtube">
+        <!-- header -->
+        <header class="youtube__header">
+          <h1>제목을 입력하세요</h1>
+        </header>
+        <!-- Part 1 -->
+        <section class="partOne">
+          <article>
+            <h2>
+              <span><i class="fa-brands fa-youtube"></i></span>
+              청소년 알고리즘교육
+            </h2>
+            <p>
+              <h3>스크래치 알고리즘교육</h3>
+              스크래치를 통하여 청소년들의 기본 컴퓨팅 사고력 향상하며 컴퓨터를 이용하는 오늘날 청소년들의 진로확보<br/><br/>
+              <h3>기본 코딩교육 무료강의</h3>
+              실제 언어를 다루며 알고리즘 및 창의력을 돋구어내는 무료강의가 오픈하였습니다.
+            </p>
+            <button>더 보러가기</button>
+          </article>
+          <iframe
+            width="320"
+            height="200"
+            src="https://www.youtube.com/embed/tvqsFaxAYDc"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </section>
+        <!-- Part 2 -->
+        <section class="partTwo">
+          <article>
+            <h2>
+              <span><i class="fa-brands fa-youtube"></i></span>
+              청소년 알고리즘교육
+            </h2>
+            <p>
+              <h3>스크래치 알고리즘교육</h3>
+              스크래치를 통하여 청소년들의 기본 컴퓨팅 사고력 향상하며 컴퓨터를 이용하는 오늘날 청소년들의 진로확보<br/><br/>
+              <h3>기본 코딩교육 무료강의</h3>
+              실제 언어를 다루며 알고리즘 및 창의력을 돋구어내는 무료강의가 오픈하였습니다.
+            </p>
+            <button>더 보러가기</button>
+          </article>
+          <iframe
+            width="320"
+            height="200"
+            src="https://www.youtube.com/embed/tvqsFaxAYDc"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+        </section>
       </section>
     </main>
     <button class="scrollUp"><i class="fas fa-arrow-up"></i></button>
@@ -231,8 +374,16 @@
     ></script>
     <!-- Slick JS -->
     <script type="text/javascript" src="slick/slick/slick.min.js"></script>
+    <!-- AOS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        once: true,
+      });
+    </script>
     <!-- JS -->
     <script src="./js/main/main_slider.js"></script>
+    <script src="./js/main/poster_slider.js"></script>
     <script src="./js/default/scrollUpBtn.js"></script>
   </body>
 </html>

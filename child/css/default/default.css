@@ -14,14 +14,14 @@
   --color-blue: #0345fc;
   --color-dark-blue: #003688;
   --color-light-blue: #61a0ff;
+  --color-BG-blue: #dbeaff;
   --color-white: #fff;
   --color-opacity-white: rgba(255, 255, 255, 0.76);
   --color-black: #000;
   --color-grey: rgb(95, 95, 95);
   --color-light-grey: rgb(221, 221, 221);
-  --color-dark-grey: rgb(51, 51, 51);
+  --color-dark-grey: rgb(27, 27, 27);
   --color-red: rgb(255, 89, 89);
-  --color-green: rgb(24, 143, 24);
 }
 
 /* Universe */
@@ -91,6 +91,11 @@ button {
   height: 100%;
   /* padding */
   padding: 10px 50px;
+}
+/* hover */
+.header__link__box > a:hover {
+  /* background */
+  background-color: var(--color-light-blue);
 }
 /* header a */
 .header__link__box > a:nth-of-type(1) {
@@ -321,7 +326,7 @@ input {
     cursor: pointer;
   }
   .show + a,
-  ul {
+  .nav__ul {
     /* display */
     display: none;
   }
@@ -448,6 +453,16 @@ footer {
   transition: all 250ms ease-in-out;
   /* z-index */
   z-index: 1000;
+}
+
+@media screen and (max-width: 768px) {
+  .scrollUp {
+    /* font */
+    font-size: 1rem;
+    /* size */
+    width: 40px;
+    height: 40px;
+  }
 }
 
 .scrollUp-active {

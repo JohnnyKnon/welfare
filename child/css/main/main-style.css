@@ -434,6 +434,14 @@ main {
   font-size: 2rem;
 }
 /* subNav Responsive */
+@media screen and (max-width: 1020px) {
+  .subNav__button__box {
+    /* max-width */
+    max-width: 700px;
+    /* width */
+    width: 90%;
+  }
+}
 @media screen and (max-width: 525px) {
   .subNav__button__box {
     /* flex */

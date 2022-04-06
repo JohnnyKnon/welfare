@@ -127,6 +127,7 @@
         </header>
         <!-- Map -->
         <iframe
+          id="map"
           src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3169.3901247386675!2d127.1496708156449!3d37.404252841162396!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca8412417e86d%3A0xa51c5c018a935fb2!2z67aE64u57YWM7YGs64W47YyM7YGsReuPmQ!5e0!3m2!1sko!2skr!4v1649221840846!5m2!1sko!2skr"
           style="border: 0"
           allowfullscreen=""
@@ -158,11 +159,14 @@
             </div>
           </section>
           <section class="right__info">
-            <button class="detail">
+            <button
+              class="detail"
+              onclick="window.open('https://goo.gl/maps/rFLShvqKRTAwMy579')"
+            >
               <i class="fa-solid fa-location-dot"></i
               >&nbsp;&nbsp;&nbsp;자세히보기
             </button>
-            <button class="print">
+            <button class="print" onclick="window.print();">
               <i class="fa-solid fa-print"></i>&nbsp;&nbsp;&nbsp;인쇄하기
             </button>
           </section>
@@ -194,6 +198,7 @@
     </footer>
     <!-- JS -->
     <script src="../../js/default/scrollUpBtn.js"></script>
+    <script src="../../js/sub/sub06Script.js"></script>
     <!-- AOS -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>

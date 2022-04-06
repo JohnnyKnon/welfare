@@ -808,8 +808,6 @@ main {
 #others__slider {
   /* position */
   position: relative;
-  /* margin */
-  margin: 0 auto;
   /* size */
   height: 100%;
 }

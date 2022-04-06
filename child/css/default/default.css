@@ -26,6 +26,8 @@
 
 /* Universe */
 * {
+  /* overflow */
+  overflow-x: clip;
   /* margin */
   margin: 0;
   /* padding */
@@ -451,6 +453,10 @@ footer {
   visibility: hidden;
   /* transition */
   transition: all 250ms ease-in-out;
+  /* flex */
+  display: flex;
+  justify-content: center;
+  align-items: center;
   /* z-index */
   z-index: 1000;
 }

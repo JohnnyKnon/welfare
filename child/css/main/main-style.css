@@ -44,6 +44,8 @@ main {
 
 /* slider */
 #slider__box {
+  /* overflow */
+  overflow-x: hidden;
   /* position */
   position: absolute;
   /* size */

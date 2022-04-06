@@ -33,6 +33,24 @@
   /* box-sizing */
   box-sizing: border-box;
 }
+body {
+  overflow-x: hidden;
+}
+body::-webkit-scrollbar {
+  /* size */
+  width: 3px;
+}
+body::-webkit-scrollbar-thumb {
+  /* background */
+  background-color: var(--color-light-blue);
+  /* border */
+  border-radius: 5px;
+}
+
+body::-webkit-scrollbar-track {
+  /* background */
+  background-color: var(--color-white);
+}
 
 /* a */
 a {
@@ -119,7 +137,7 @@ nav {
   /* overflow */
   overflow-x: clip;
   /* width */
-  width: 100%;
+  width: 100vw;
   /* position */
   position: sticky;
   top: 0;
@@ -225,7 +243,7 @@ nav ul ul li {
   /* margin */
   margin: 0;
   /* width */
-  width: 125px;
+  width: 130px;
   /* float */
   float: none;
   /* display */

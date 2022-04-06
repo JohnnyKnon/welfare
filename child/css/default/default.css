@@ -22,6 +22,7 @@
   --color-light-grey: rgb(221, 221, 221);
   --color-dark-grey: rgb(27, 27, 27);
   --color-red: rgb(255, 89, 89);
+  --color-brown: rgb(73, 48, 0);
 }
 
 /* Universe */
@@ -70,6 +71,19 @@ button {
   cursor: pointer;
   border: none;
   outline: none;
+}
+
+/* main */
+main {
+  /* overflow */
+  overflow-x: hidden;
+  /* size */
+  width: 100vw;
+  height: 100%;
+  /* flex */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 /* Header */
@@ -158,13 +172,17 @@ nav .logo {
   float: left;
   /* font */
   font-family: var(--font-kr);
-  font-size: 2rem;
-  font-weight: var(--font-bold);
-  color: var(--color-dark-blue);
   /* text */
   line-height: 70px;
   /* padding */
   padding-left: 60px;
+}
+
+.logo > a {
+  /* font */
+  font-size: 2rem;
+  font-weight: var(--font-bold);
+  color: var(--color-dark-blue);
 }
 
 /* nav after */

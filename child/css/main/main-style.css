@@ -681,6 +681,114 @@ main {
   background: url(../../images/main/poster/poster.jpg) no-repeat center/cover;
 }
 
+/* Boards Responsive */
+@media screen and (max-width: 960px) {
+  .boards__box {
+    /* flex */
+    flex-direction: column;
+  }
+}
+
+/* Education */
+#edu {
+  /* size */
+  width: 100vw;
+  height: 100%;
+  /* background */
+  background-color: var(--color-BG-blue);
+  /* padding */
+  padding-top: 10px;
+  padding-bottom: 100px;
+  /* flex */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.edu__box {
+  /* max-width */
+  max-width: 950px;
+  /* size */
+  width: 90%;
+}
+.edu__contents__box {
+  /* padding */
+  padding-top: 20px;
+  /* flex */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.edu__contents__items {
+  /* position */
+  position: relative;
+  /* font */
+  font-family: var(--font-kr);
+  /* size */
+  width: 300px;
+  height: 200px;
+  /* padding */
+  padding: 20px;
+  /* flex */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 20px;
+  /* background */
+  background-color: var(--color-white);
+  /* cursor */
+  cursor: pointer;
+}
+.edu__contents__items h3 {
+  /* font */
+  font-size: 1.4rem;
+  /* padding */
+  padding: 3px 0;
+}
+.edu__contents__items p {
+  /* font */
+  font-size: 0.9rem;
+}
+/* hover */
+.edu__contents__items:hover > h3 {
+  /* font */
+  color: var(--color-red);
+}
+
+.edu__contents__items > button {
+  /* position */
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  /* font */
+  font-size: 1.4rem;
+  color: var(--color-white);
+  /* display */
+  display: block;
+  /* size */
+  width: 30px;
+  height: 30px;
+  /* background */
+  background-color: var(--color-light-blue);
+}
+
+/* Education Responsive */
+@media screen and (max-width: 960px) {
+  .edu__box {
+    /* max-width */
+    max-width: 450px;
+    /* size */
+    width: 90%;
+  }
+  .edu__contents__box {
+    /* flex */
+    flex-direction: column;
+  }
+}
 /* Youtube */
 #youtube {
   /* overflow */

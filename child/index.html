@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- CSS LINK -->
-    <link rel="stylesheet" href="./css/default/default.css" />
-    <link rel="stylesheet" href="./css/main/main-style.css" />
+    <link rel="stylesheet" href="css/default/default.css" />
+    <link rel="stylesheet" href="css/main/main-style.css" />
     <!-- slick -->
     <link rel="stylesheet" type="text/css" href="slick/slick/slick.css" />
     <link rel="stylesheet" type="text/css" href="slick/slick/slick-theme.css" />
@@ -235,7 +235,11 @@
       <!-- boards -->
       <section id="boards">
         <div class="boards__box">
-          <article class="board">
+          <article class="board" 
+          data-aos="fade-right"
+          data-aos-delay="50"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-out">
             <header class="board__title">
               <h2>게시판 이름</h2>
               <a href="#">더보기..</a>
@@ -271,7 +275,11 @@
               </li>
             </ul>
           </article>
-          <article class="album">
+          <article class="album"
+          data-aos="fade-left"
+          data-aos-delay="800"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-out">
             <header class="board__title">
               <h2>앨범 이름</h2>
               <a href="#">더보기..</a>
@@ -340,6 +348,21 @@
           ></iframe>
         </section>
       </section>
+      <!-- affiliated organization -->
+      <section id="others">
+        <div id="others__slider">
+          <div>
+            <img src="./images/main/logos/Webffle_Logo.jpg" alt="">
+          </div>
+          <div> <img src="./images/main/logos/Webffle_Logo.jpg" alt=""></div>
+          <div> <img src="./images/main/logos/Webffle_Logo.jpg" alt=""></div>
+          <div> <img src="./images/main/logos/Webffle_Logo.jpg" alt=""></div>
+          <div> <img src="./images/main/logos/Webffle_Logo.jpg" alt=""></div>
+          <div> <img src="./images/main/logos/Webffle_Logo.jpg" alt=""></div>
+          <div> <img src="./images/main/logos/Webffle_Logo.jpg" alt=""></div>
+          <div> <img src="./images/main/logos/Webffle_Logo.jpg" alt=""></div>
+        </div>
+      </section>
     </main>
     <button class="scrollUp"><i class="fas fa-arrow-up"></i></button>
     <!-- footer -->
@@ -374,6 +397,10 @@
     ></script>
     <!-- Slick JS -->
     <script type="text/javascript" src="slick/slick/slick.min.js"></script>
+    <!-- JS -->
+    <script src="js/main/main_slider.js"></script>
+    <script src="js/main/poster_slider.js"></script>
+    <script src="js/default/scrollUpBtn.js"></script>
     <!-- AOS -->
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script>
@@ -381,9 +408,6 @@
         once: true,
       });
     </script>
-    <!-- JS -->
-    <script src="./js/main/main_slider.js"></script>
-    <script src="./js/main/poster_slider.js"></script>
-    <script src="./js/default/scrollUpBtn.js"></script>
+    
   </body>
 </html>

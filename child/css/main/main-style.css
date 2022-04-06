@@ -1,5 +1,7 @@
 /* main */
 main {
+  /* overflow */
+  overflow-x: hidden;
   /* size */
   width: 100vw;
   height: 100%;
@@ -485,7 +487,7 @@ main {
   width: 80%;
   height: 500px;
   /* background */
-  background: url('/child/images/main/poster/poster.jpg') no-repeat center/cover;
+  background: url(../../images/main/poster/poster.jpg) no-repeat center/cover;
 }
 
 /* Arrow */
@@ -679,13 +681,16 @@ main {
 
 /* Youtube */
 #youtube {
+  /* overflow */
+  overflow: hidden;
   /* max-width */
   max-width: 1200px;
   /* size */
   width: 90%;
   height: 100%;
   /* padding */
-  padding: 50px 0;
+  padding-top: 100px;
+
   /* flex */
   display: flex;
   flex-direction: column;
@@ -754,11 +759,75 @@ main {
   padding: 10px 0;
   /* border */
   border: 1px solid var(--color-grey);
+  /* transition */
+  transition: all 200ms ease-in-out;
+}
+/* hover */
+:is(.partOne, .partTwo) article button:hover {
+  /* font */
+  color: var(--color-white);
+  /* background */
+  background-color: var(--color-grey);
 }
 
 /* youtube Responsive */
 @media screen and (max-width: 1011px) {
   :is(.partOne, .partTwo) article {
+    /* size */
+    width: 320px;
+  }
+}
+
+@media screen and (max-width: 811px) {
+  .partOne,
+  .partTwo {
+    /* flex */
+    flex-direction: column;
+    gap: 40px;
+  }
+}
+
+/* affiliated organization */
+#others {
+  /* overflow */
+  overflow: hidden;
+  /* max-width */
+  max-width: 1200px;
+  /* size */
+  width: 100%;
+  height: 100%;
+  /* padding */
+  padding: 80px 0;
+  /* flex */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#others__slider {
+  /* position */
+  position: relative;
+  /* margin */
+  margin: 0 auto;
+  /* size */
+  height: 100%;
+}
+
+#others__slider div {
+  /* size */
+  width: 800px;
+  height: 100px;
+  /* background */
+  background-color: var(--color-white);
+}
+
+#others__slider div img {
+  /* size */
+  width: 70%;
+}
+
+/* affiliated organization Responsive */
+@media screen and (max-width: 841px) {
+  #others__slider div {
     /* size */
     width: 320px;
   }

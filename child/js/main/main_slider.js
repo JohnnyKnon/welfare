@@ -47,4 +47,23 @@ $(document).ready(function () {
       },
     ],
   });
+  // affiliated organization
+  $('#others__slider').slick({
+    arrows: false,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    responsive: [
+      {
+        breakpoint: 840,
+        settings: {
+          arrows: false,
+          centerMode: true,
+          centerPadding: '0px',
+          slidesToShow: 1,
+        },
+      },
+    ],
+  });
 });

@@ -140,7 +140,7 @@ main {
 }
 
 /* Header Responsive */
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 559px) {
   #total__header {
     /* display */
     display: none;
@@ -280,7 +280,7 @@ nav ul ul li a {
 /* show */
 .show,
 .icon,
-input {
+input:not(.search, .submit) {
   display: none;
 }
 

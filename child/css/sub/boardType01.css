@@ -1,0 +1,146 @@
+a{
+    /* font */
+    color: var(--color-black);
+}
+
+/* table wrap */
+#board__wrap{
+    /* font */
+    font-family: var(--font-kr);
+    /* max-width */
+    max-width: 1200px;
+    /* size */
+    width: 90%;
+    height: 100%;
+    /* padding */
+    padding-bottom: 60px;
+    /* flex */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* search */
+#search{
+    /* size */
+    width: 100%;
+    /* padding */
+    padding: 10px 0;
+    /* flex */
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+}
+
+#search > select, #search > input{
+    /* font */
+    font-size: 0.8rem;
+    font-family: var(--font-kr);
+    /* border */
+    border: 1px solid var(--color-grey);
+    border-radius: 3px;
+} 
+
+.submit{
+    /* font */
+    color: var(--color-white);
+    /* background */
+    background-color: var(--color-grey);
+    /* padding */
+    padding: 1px 15px;
+    /* cursor */
+    cursor: pointer;
+}
+
+/* board */
+table{
+    /* font */
+    font-size: 0.9rem;
+    /* text */
+    text-align: center;
+    /* size */
+    width: 100%;
+    /* border */
+    border-top: 2px solid var(--color-black);
+    border-collapse: collapse;
+}
+
+th, td{
+    /* padding */
+    padding: 15px 5px;
+    /* border */
+    border-bottom: 1px solid var(--color-light-grey);
+}
+
+th{
+    /* background */
+    background-color: var(--color-light-grey);
+}
+
+td{
+    /* cursor */
+    cursor: pointer;
+}
+
+#important{
+    /* font */
+    color: var(--color-red);
+}
+
+.now{
+    /* padding */
+    padding: 10px 0;
+}
+
+.mobile{
+    /* display */
+    display: none;
+}
+
+/* Reposnive */
+@media screen and (max-width: 694px) {
+    th{
+        /* display */
+        display: none;
+    }
+    td{
+        /* font */
+        font-size: 0.8rem;
+        /* text */
+        text-align: left;
+        /* padding */
+        padding: 0;
+        /* border */
+        border: none;
+    }
+
+    .title{
+        /* border */
+        border-bottom: 1px solid var(--color-grey);
+    }
+
+    tr{
+        /* padding */
+        padding: 20px 0;
+        /* border */
+        border-bottom: 1px solid var(--color-light-grey);
+        /* flex */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 5px;
+    }
+
+    .mobile{
+        /* display */
+        display: inline-block;
+        /* font */
+        font-size: 0.7rem;
+        font-family: var(--font-kr);
+        color: var(--color-grey);
+    }
+}

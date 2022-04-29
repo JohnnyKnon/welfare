@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- CSS LINK -->
     <link rel="stylesheet" href="../../css/sub/default/subDefault.css" />
-    <link rel="stylesheet" href="../../css/sub/sub06.css" />
+    <link rel="stylesheet" href="../../css/sub/boardType01.css" />
     <link rel="stylesheet" href="../../css/default/default.css" />
     <!-- FontAwesome -->
     <script
@@ -15,7 +15,7 @@
     ></script>
     <!-- AOS -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-    <title>미야청소년센터 | 오시는 길</title>
+    <title>미야청소년센터 | 공지사항</title>
   </head>
   <body>
     <!-- Header -->
@@ -41,12 +41,12 @@
           <a href="#">센터안내</a>
           <input type="checkbox" id="btn-1" />
           <ul class="nav__ul">
-            <li><a href="sub01.html">인사말</a></li>
+            <li><a href="">인사말</a></li>
             <li><a href="">연혁</a></li>
             <li><a href="">사업목적</a></li>
             <li><a href="">법인소개</a></li>
             <li><a href="">조직도</a></li>
-            <li><a href="#">오시는 길</a></li>
+            <li><a href="sub06.html">오시는 길</a></li>
           </ul>
         </li>
         <li>
@@ -91,7 +91,7 @@
           <ul class="nav__ul">
             <li><a href="boardType01.html">공지사항</a></li>
             <li><a href="">활동사진</a></li>
-            <li><a href="boardType03.html">자료실</a></li>
+            <li><a href="#">자료실</a></li>
             <li><a href="">Q&A</a></li>
           </ul>
         </li>
@@ -102,14 +102,15 @@
       <!-- title -->
       <section id="title" class="top">
         <section class="title__img">
-          <h1 class="title__txt">센터안내</h1>
+          <h1 class="title__txt">알림마당</h1>
         </section>
         <section class="title__contents">
           <p class="title__category">
             <a href="../../index.html"><i class="fa-solid fa-house"></i></a
-            >&nbsp;&nbsp;&nbsp; \ &nbsp;&nbsp;<a href="sub01.html">센터안내</a
+            >&nbsp;&nbsp;&nbsp; \ &nbsp;&nbsp;<a href="boardType01.html"
+              >알림마당</a
             >&nbsp;&nbsp; \ &nbsp;&nbsp;
-            <a href="#">오시는 길</a>
+            <a href="#">자료실</a>
           </p>
         </section>
       </section>
@@ -117,7 +118,7 @@
       <section class="main__contents__box">
         <!-- Header -->
         <header class="main__contents__title">
-          <h1>오시는 길</h1>
+          <h1>자료실</h1>
           <!-- SNS -->
           <div class="contents__title__sns__box">
             <a href="#" class="kakao"><i class="fa-solid fa-comment"></i></a>
@@ -127,89 +128,68 @@
             ></a>
           </div>
         </header>
-        <!-- Map -->
-        <iframe
-          id="map"
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3169.3901247386675!2d127.1496708156449!3d37.404252841162396!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca8412417e86d%3A0xa51c5c018a935fb2!2z67aE64u57YWM7YGs64W47YyM7YGsReuPmQ!5e0!3m2!1sko!2skr!4v1649221840846!5m2!1sko!2skr"
-          style="border: 0"
-          allowfullscreen=""
-          loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"
-        ></iframe>
-        <!-- info -->
-        <section id="info">
-          <section class="left__info">
-            <p class="address">
-              <span class="info__icon"
-                ><i class="fa-solid fa-location-dot"></i></span
-              >&nbsp; 경기도 성남시 분당구 판교로 700 미야청소년센터
-            </p>
-            <div class="tel">
-              <p>
-                <span class="info__icon"><i class="fa-solid fa-phone"></i></span
-                >&nbsp; 02-0000-0000~1
-              </p>
-              <p>
-                <span class="info__icon"><i class="fa-solid fa-print"></i></span
-                >&nbsp; 02-0000-0000~1
-              </p>
-              <p>
-                <span class="info__icon"
-                  ><i class="fa-solid fa-envelope"></i></span
-                >&nbsp; MIYA@example.com
-              </p>
-            </div>
+        <section id="board__wrap">
+          <section id="search">
+            <select name="search-type" id="search__type">
+              <option value="전체">전체</option>
+              <option value="공지">공지</option>
+              <option value="작성자">작성자</option>
+              <option value="작성일">작성일</option>
+            </select>
+            <input
+              type="search"
+              name="search"
+              id="search__text"
+              class="search"
+            />
+            <input type="submit" class="submit" value="검색" />
           </section>
-          <section class="right__info">
-            <button
-              class="detail"
-              onclick="window.open('https://goo.gl/maps/rFLShvqKRTAwMy579')"
-            >
-              <i class="fa-solid fa-location-dot"></i
-              >&nbsp;&nbsp;&nbsp;자세히보기
-            </button>
-            <button class="print" onclick="window.print();">
-              <i class="fa-solid fa-print"></i>&nbsp;&nbsp;&nbsp;인쇄하기
-            </button>
-          </section>
-        </section>
-        <!-- transportation -->
-        <section id="transpor">
-          <article id="public">
-            <h2 class="public__title transpor__title">
-              대중교통으로 오시는 방법
-            </h2>
-            <div class="public__box">
-              <section id="subway" class="public__transpor">
-                <h3 class="transpor__icon"><i class="fas fa-subway"></i></h3>
-                <div class="subway__text__box transpor__text__box">
-                  <h4>지하철 이용시</h4>
-                  <p>
-                    <span class="subway__highlight">수인분당</span> 지하철
-                    수인분당선 야탑역 하차 후 <br />3번출구, 1번출구 마을버스
-                    혹은 일반버스 탑승
-                  </p>
-                </div>
-              </section>
-              <section id="bus" class="public__transpor">
-                <h3 class="transpor__icon"><i class="fas fa-bus-alt"></i></h3>
-                <div class="bus__text__box transpor__text__box">
-                  <h4>버스 이용시</h4>
-                  <p>
-                    <span class="bus__highlight__normal">50,</span>
-                    <span class="bus__highlight__normal">53,</span>
-                    <span class="bus__highlight__normal">103,</span>
-                    <span class="bus__highlight__city">마을버스 8-1</span>:
-                    분당테크노파크A동 하차<br />
-                    <span class="bus__highlight__normal">250,</span>
-                    <span class="bus__highlight__normal">300,</span>
-                    <span class="bus__highlight__city">마을버스 8-1</span>:
-                    매화마을4단지 하차 도보 20분
-                  </p>
-                </div>
-              </section>
-            </div>
-          </article>
+          <table>
+            <tr>
+              <th>번호</th>
+              <th>제목</th>
+              <th>작성자</th>
+              <th>작성일</th>
+              <th>조회</th>
+            </tr>
+            <tr>
+              <td>4</td>
+              <td class="title">
+                2022년 05월 독서페스티벌 개최 관련 자원봉사자 모집공고
+              </td>
+              <td><span class="mobile">작성자:&nbsp;</span>미야청소년센터</td>
+              <td><span class="mobile">작성일:&nbsp;</span>2022-04-26</td>
+              <td><span class="mobile">조회:&nbsp;</span>120</td>
+            </tr>
+            <tr>
+              <td>3</td>
+              <td class="title">
+                2022년 05월 독서페스티벌 개최 관련 자원봉사자 모집공고
+              </td>
+              <td><span class="mobile">작성자:&nbsp;</span>미야청소년센터</td>
+              <td><span class="mobile">작성일:&nbsp;</span>2022-04-26</td>
+              <td><span class="mobile">조회:&nbsp;</span>120</td>
+            </tr>
+            <tr>
+              <td>2</td>
+              <td class="title">
+                2022년 05월 독서페스티벌 개최 관련 자원봉사자 모집공고
+              </td>
+              <td><span class="mobile">작성자:&nbsp;</span>미야청소년센터</td>
+              <td><span class="mobile">작성일:&nbsp;</span>2022-04-26</td>
+              <td><span class="mobile">조회:&nbsp;</span>120</td>
+            </tr>
+            <tr>
+              <td>1</td>
+              <td class="title">
+                2022년 05월 독서페스티벌 개최 관련 자원봉사자 모집공고
+              </td>
+              <td><span class="mobile">작성자:&nbsp;</span>미야청소년센터</td>
+              <td><span class="mobile">작성일:&nbsp;</span>2022-04-26</td>
+              <td><span class="mobile">조회:&nbsp;</span>120</td>
+            </tr>
+          </table>
+          <span class="now">1</span>
         </section>
       </section>
     </main>

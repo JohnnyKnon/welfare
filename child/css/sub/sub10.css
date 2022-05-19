@@ -20,7 +20,8 @@
   background-attachment: fixed;
 }
 
-.tel__apply__wrap > p {
+.tel__apply__wrap > p,
+.build__time {
   /* font */
   font-size: 1rem;
   /* flex */
@@ -134,7 +135,8 @@ th {
 
 /* Reponsive */
 @media screen and (max-width: 890px) {
-  .tel__apply__wrap > p {
+  .tel__apply__wrap > p,
+  .build__time {
     /* font */
     font-size: 0.75rem;
   }

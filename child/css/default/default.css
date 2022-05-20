@@ -23,8 +23,8 @@
   --color-dark-grey: rgb(27, 27, 27);
   --color-red: rgb(255, 89, 89);
   --color-brown: rgb(73, 48, 0);
-  --color-yellow : rgb(187, 173, 51);
-  --color-green : rgb(23, 119, 23);
+  --color-yellow: rgb(187, 173, 51);
+  --color-green: rgb(23, 119, 23);
 }
 
 /* Universe */
@@ -280,7 +280,7 @@ nav ul ul li a {
 /* show */
 .show,
 .icon,
-input:not(.search, .submit) {
+input:not(.search, .submit, #agree-check, .name-qna, .email-qna, #email__select, .tel-qna, #file-qna, .submit__btn) {
   display: none;
 }
 
